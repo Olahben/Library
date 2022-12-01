@@ -15,3 +15,8 @@ function addBookToLibrary() {
 }
 addBookToLibrary()
 
+function displayLibrary() {
+    myLibrary.forEach(book => console.log(book))
+}
+
+console.log(displayLibrary())
