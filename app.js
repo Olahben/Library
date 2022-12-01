@@ -6,5 +6,12 @@ function createBook(title, author, pages, haveRead) {
     this.pages = pages, 
     this.haveRead = haveRead
 
-    
+
 }
+
+function addBookToLibrary() {
+    const newBook = new createBook('Heksene', 'Roald Dahl', 200, true)
+    myLibrary.push(newBook)
+}
+addBookToLibrary()
+
