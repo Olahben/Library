@@ -1,4 +1,5 @@
 let myLibrary = [new Book('Heksene', 'Roald Dahl', 200, true ), new Book('The richest man in babylon', 'Ola', 315, false), new Book('RIch dad poor dad', 'Robert', 300, false), new Book('Neuroplasticity', 'Andrew', 489, false)]
+const container = document.querySelector('#book-content')
 
 function createBookCard() {
     const div = document.createElement('div')
