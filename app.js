@@ -22,7 +22,7 @@ function addBookToLibrary() {
 addBookToLibrary()
 
 function displayLibrary() {
-    myLibrary.forEach(book => console.log(book))
+    myLibrary.forEach(book => createBookCard())
 }
 
 displayLibrary()
