@@ -1,6 +1,6 @@
 let myLibrary = []
 
-function createBook(title, author, pages, haveRead) {
+function Book(title, author, pages, haveRead) {
     this.title = title, 
     this.author = author, 
     this.pages = pages, 
@@ -10,7 +10,7 @@ function createBook(title, author, pages, haveRead) {
 }
 
 function addBookToLibrary() {
-    const newBook = new createBook('Heksene', 'Roald Dahl', 200, true)
+    const newBook = new Book('Heksene', 'Roald Dahl', 200, true)
     myLibrary.push(newBook)
 }
 addBookToLibrary()
