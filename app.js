@@ -1,4 +1,4 @@
-let myLibrary = []
+let myLibrary = [new Book('Heksene', 'Roald Dahl', 200, true ), new Book('The richest man in babylon', 'Ola', 315, false), new Book('RIch dad poor dad', 'Robert', 300, false), new Book('Neuroplasticity', 'Andrew', 489, false)]
 
 function Book(title, author, pages, haveRead) {
     this.title = title, 
@@ -14,7 +14,7 @@ function addBookToLibrary() {
     const newBook2 = new Book('The richest man in babylon', 'Ola', 315, false)
     const newBook3 = new Book('RIch dad poor dad', 'Robert', 300, false)
     const newBook4 = new Book('Neuroplasticity', 'Andrew', 489, false)
-    myLibrary.push(newBook)
+    myLibrary.push()
 }
 addBookToLibrary()
 
@@ -22,4 +22,4 @@ function displayLibrary() {
     myLibrary.forEach(book => console.log(book))
 }
 
-console.log(displayLibrary())
+displayLibrary()
