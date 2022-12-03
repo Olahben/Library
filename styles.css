@@ -9,3 +9,8 @@
     gap: 30px;
 
 }
+
+.card {
+    background-color: #393E46;
+    border-radius: 6px;
+}
