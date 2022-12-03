@@ -25,3 +25,11 @@
     overflow: auto;
     background-color: #393E46;
 }
+
+#modal form {
+    background-color: #393E46;
+    padding: 40px;
+    border: 1px solid white;
+    width: 45%;
+    
+}
