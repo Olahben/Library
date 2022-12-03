@@ -35,5 +35,7 @@ addBook.addEventListener('click', () => {
     modal.style.display = 'block';
 });
 
-
+submitBook.addEventListener('click', () => {
+    modal.style.display = 'none'
+});
 
