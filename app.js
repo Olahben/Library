@@ -31,4 +31,9 @@ const modal = document.getElementById('modal')
 const addBook = document.getElementById('add-book')
 const submitBook = document.getElementById('submit')
 
+addBook.addEventListener('click', () => {
+    modal.style.display = 'block';
+});
+
+
 
