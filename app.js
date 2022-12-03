@@ -27,3 +27,8 @@ function displayLibrary() {
 
 displayLibrary()
 
+const modal = document.getElementById('modal')
+const addBook = document.getElementById('add-book')
+const submitBook = document.getElementById('submit')
+
+
