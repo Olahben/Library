@@ -75,3 +75,13 @@ fieldset .title #title {
     font-size: 1em;
 }
 
+
+fieldset .author #author {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    height: 20px;
+    font-family: 'Oswald';
+    font-size: 1em;
+}
+
