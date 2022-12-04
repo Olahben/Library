@@ -61,6 +61,8 @@ fieldset {
 }
 
 fieldset .legend  {
-
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-size: 1.5em;
 }
 
