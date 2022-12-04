@@ -26,13 +26,13 @@
     width: 60%;
     height: 70%;
     overflow: auto;
-    background-color: #393E46;
+    background-color: #EEEEEE;
 
     
 }
 
 #modal form {
-    background-color: #393E46;
+    background-color: #EEEEEE;
     padding: 40px;
     border: 1px solid white;
     width: 45%;
