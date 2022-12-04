@@ -85,3 +85,10 @@ fieldset .author #author {
     font-size: 1em;
 }
 
+fieldset .pages #pages {
+    height: 20px;
+    width: 10%;
+    font-family: 'Oswald';
+    font-size: 1em;
+}
+
