@@ -66,7 +66,7 @@ fieldset .legend  {
     font-size: 1.5em;
 }
 
-fieldset .title #title {
+fieldset .title #title, fieldset .author #author {
     border: 1px solid black;
     border-radius: 5px;
     width: 80%;
@@ -76,14 +76,7 @@ fieldset .title #title {
 }
 
 
-fieldset .author #author {
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 80%;
-    height: 20px;
-    font-family: 'Oswald';
-    font-size: 1em;
-}
+
 
 fieldset .pages #pages {
     height: 20px;
@@ -91,4 +84,6 @@ fieldset .pages #pages {
     font-family: 'Oswald';
     font-size: 1em;
 }
+
+
 
