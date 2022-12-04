@@ -46,3 +46,7 @@
     width: 40px;
     height: 20px;
 }
+
+fieldset {
+    border: solid 0px;
+}
