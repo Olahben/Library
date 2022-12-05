@@ -90,9 +90,10 @@ fieldset .title #title, fieldset .author #author {
 
 fieldset .pages #pages {
     height: 20px;
-    width: 10%;
+    width: 20%;
     font-family: 'Oswald';
     font-size: 1em;
+
 }
 
 
