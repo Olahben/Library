@@ -119,4 +119,15 @@ fieldset .pages #pages {
 }
 
 
+label p {
+    margin: 0px;
+}
 
+label {
+    display: flex;
+    align-items: center;
+}
+
+.read {
+    display: flex;
+}
