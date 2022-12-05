@@ -81,8 +81,8 @@ fieldset .legend  {
     font-family: 'Oswald';
     font-weight: 600;
     font-size: 1.5em;
-    margin-right: 30%;
-    margin-left: 30%;
+    margin-right: 27%;
+    margin-left: 33%;
 }
 
 fieldset .title #title, fieldset .author #author {
@@ -117,5 +117,6 @@ fieldset .pages #pages {
     display: flex;
     justify-content: center;
 }
+
 
 
