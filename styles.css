@@ -62,8 +62,10 @@ fieldset {
     width: 70%;
     height: 50%;
 
-    display: grid;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
