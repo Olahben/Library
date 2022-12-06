@@ -51,3 +51,4 @@ for (let ele of formData) { // Log form data
 }
 
 
+bookForm.addEventListener('click', submitClick, false)
