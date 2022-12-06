@@ -39,3 +39,12 @@ submitBook.addEventListener('click', () => {
     modal.style.display = 'none'
 });
 
+let formData = new formData(document.querySelector('form'))
+
+for (let ele of formData) {
+    let name = ele[0];
+    let value = ele[1]
+
+    console.log(name, value);
+}
+
