@@ -41,14 +41,19 @@ submitBook.addEventListener('click', () => {
 
 const bookForm = document.querySelector('form')
 
-let formData = new formData(bookForm)
 
-for (let ele of formData) { // Log form data
+
+submitBook.addEventListener('click', submitClick, false)
+
+function submitClick(event) {
+    event.preventDefault()
+}
+
+/*let formData1 = new formData(bookForm)
+
+for (let ele of formData1) { // Log form data
     let name = ele[0];
     let value = ele[1]
 
     console.log(name, value);
-}
-
-
-bookForm.addEventListener('click', submitClick, false)
+}*/
