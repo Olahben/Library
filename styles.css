@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@100;500;700;900&display=swap');
 
-
+* {
+    box-sizing: border-box;
+    
+}
 
 
 #book-content {
@@ -143,4 +146,5 @@ label {
     height: 45px;
     width: 100px;
     font-size: 1.4em;
+
 }
