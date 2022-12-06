@@ -53,6 +53,8 @@
     width: 30%;
     height: 25px;
     border: 1px solid honeydew;
+    color: white;
+    margin-top: 10px;
 }
 
 .submit {
