@@ -48,7 +48,11 @@ bookForm.addEventListener('submit', submitClick)
 
 function submitClick(event) {
     event.preventDefault()
-    console.log(bookTitle.value)
+    callConstructor()
     console.log(event)
+}
+
+function callConstructor() {
+     new Book(formFields[0].value, formFields[1].value, formFields[2].value, formFields[3].value)
 }
 
