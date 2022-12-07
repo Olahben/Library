@@ -40,7 +40,8 @@ submitBook.addEventListener('click', () => {
 });
 
 const bookForm = document.querySelector('form')
-const bookTitle = document.querySelector('#title')
+
+const formFields = [document.querySelector('#title'), document.querySelector('#author'), document.querySelector('#pages'), document.querySelector('#read')]
 
 
 bookForm.addEventListener('submit', submitClick)
@@ -51,11 +52,3 @@ function submitClick(event) {
     console.log(event)
 }
 
-/*let formData1 = new formData(bookForm)
-
-for (let ele of formData1) { // Log form data
-    let name = ele[0];
-    let value = ele[1]
-
-    console.log(name, value);
-}*/
