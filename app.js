@@ -48,7 +48,7 @@ bookForm.addEventListener('submit', submitClick)
 function submitClick(event) {
     event.preventDefault()
     /*console.log()
-    console.log(event)
+    console.log(event)*/
 }
 
 /*let formData1 = new formData(bookForm)
