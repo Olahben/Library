@@ -1,11 +1,7 @@
-/*let myLibrary = [new Book('Heksene', 'Roald Dahl', 200, true ), new Book('The richest man in babylon', 'Ola', 315, false), new Book('RIch dad poor dad', 'Robert', 300, false), new Book('Neuroplasticity', 'Andrew', 489, false)]*/
+
 const container = document.querySelector('#book-content')
 
-/*function createBookCard() {
-    const div = document.createElement('div')
-    container.appendChild(div)
-    div.classList.add('card')
-}*/
+
 class Book {
     constructor(title, author, pages, haveRead) {
         this.title = title, 
@@ -20,33 +16,7 @@ class Book {
         div.textContent += this.title
         }
 }
-/*function Book(title, author, pages, haveRead) {
-    this.title = title, 
-    this.author = author, 
-    this.pages = pages, 
-    this.haveRead = haveRead,
 
-    
-    this.createBookCard = () => {
-    const div = document.createElement('div')
-    container.appendChild(div)
-    div.classList.add('card')
-    div.textContent += this.title
-    }
-
-    createBookCard()
-}*/
-
-/*function addBookToLibrary() {
-    myLibrary.push()
-}
-addBookToLibrary()*/
-
-/*function displayLibrary() {
-    myLibrary.forEach(book => createBookCard())
-}
-
-displayLibrary()*/
 
 const modal = document.getElementById('modal')
 const addBook = document.getElementById('add-book')
