@@ -1,4 +1,4 @@
-let myLibrary = [new Book('Heksene', 'Roald Dahl', 200, true ), new Book('The richest man in babylon', 'Ola', 315, false), new Book('RIch dad poor dad', 'Robert', 300, false), new Book('Neuroplasticity', 'Andrew', 489, false)]
+/*let myLibrary = [new Book('Heksene', 'Roald Dahl', 200, true ), new Book('The richest man in babylon', 'Ola', 315, false), new Book('RIch dad poor dad', 'Robert', 300, false), new Book('Neuroplasticity', 'Andrew', 489, false)]*/
 const container = document.querySelector('#book-content')
 
 /*function createBookCard() {
@@ -13,7 +13,7 @@ class Book {
         this.pages = pages, 
         this.haveRead = haveRead
     }
-    createBookCard() {
+    createBookCard(obj) {
         const div = document.createElement('div')
         container.appendChild(div)
         div.classList.add('card')
@@ -37,16 +37,16 @@ class Book {
     createBookCard()
 }*/
 
-function addBookToLibrary() {
+/*function addBookToLibrary() {
     myLibrary.push()
 }
-addBookToLibrary()
+addBookToLibrary()*/
 
-function displayLibrary() {
+/*function displayLibrary() {
     myLibrary.forEach(book => createBookCard())
 }
 
-displayLibrary()
+displayLibrary()*/
 
 const modal = document.getElementById('modal')
 const addBook = document.getElementById('add-book')
@@ -74,6 +74,7 @@ function submitClick(event) {
 }
 
 function callBookConstructor() {
-     new Book(formFields[0].value, formFields[1].value, formFields[2].value, formFields[3].value)
+    const newBook = new Book(formFields[0].value, formFields[1].value, formFields[2].value, formFields[3].value)
+     newBook.createBookCard()
 }
 
