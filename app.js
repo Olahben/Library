@@ -10,10 +10,21 @@ class Book {
         this.haveRead = haveRead
     }
     createBookCard(obj) {
-        const div = document.createElement('div')
-        container.appendChild(div)
-        div.classList.add('card')
-        div.textContent += this.title
+        const bookCard = document.createElement('div')
+        container.appendChild(bookCard)
+        bookCard.classList.add('card')
+
+        const bookCardTitle = document.createElement('div')
+        bookCard.appendChild(bookCardTitle)
+        bookCardTitle.classList.add('book-title-author')
+
+        const bookCardPages = document.createElement('div')
+        bookCard.appendChild(bookCardPages)
+        bookCardPages.classList.add('book-pages')
+
+        const bookCardSettings = document.createElement('div')
+        bookCard.appendChild(bookCardSettings)
+        bookCardSettings.classList.add('book-settings')
         }
 }
 
