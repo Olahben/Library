@@ -34,7 +34,7 @@ class Book {
         bookCardSettings.appendChild(read)
 
         if(this.haveRead === 'on') {
-            
+            read.defaultChecked = true
         }
         }
 }
