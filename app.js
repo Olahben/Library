@@ -33,8 +33,10 @@ class Book {
         read.classList.add('book-card-read')
         bookCardSettings.appendChild(read)
 
-        if(this.haveRead === 'on') {
+        if(formFields[3].checked) { // Check if 'read' form control is checked
             read.defaultChecked = true
+        } else {
+            read.defaultChecked = false
         }
         }
 }
