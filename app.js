@@ -27,6 +27,7 @@ class Book {
         const bookCardSettings = document.createElement('div')
         bookCard.appendChild(bookCardSettings)
         bookCardSettings.classList.add('book-settings')
+        bookCardSettings.textContent += 'Have you read the book?:'
 
         const read = document.createElement('input')
         read.type = 'checkbox'
@@ -38,6 +39,8 @@ class Book {
         } else {
             read.defaultChecked = false
         }
+
+
         }
 }
 
