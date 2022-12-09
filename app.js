@@ -24,6 +24,7 @@ const submitBook = document.getElementById('submit')
 
 addBook.addEventListener('click', () => {
     modal.style.display = 'block';
+    bookForm.reset()
 });
 
 submitBook.addEventListener('click', () => {
@@ -35,16 +36,19 @@ const bookForm = document.querySelector('form')
 const formFields = [document.querySelector('#title'), document.querySelector('#author'), document.querySelector('#pages'), document.querySelector('#read')]
 
 
-bookForm.addEventListener('submit', submitClick)
-
 function submitClick(event) {
     event.preventDefault()
     callBookConstructor()
     console.log(event)
 }
 
+bookForm.addEventListener('submit', submitClick)
+
+
 function callBookConstructor() {
     const newBook = new Book(formFields[0].value, formFields[1].value, formFields[2].value, formFields[3].value)
      newBook.createBookCard()
 }
+
+
 
