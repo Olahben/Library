@@ -30,6 +30,7 @@ class Book {
 
         const read = document.createElement('input')
         read.type = 'checkbox'
+        read.classList.add('book-card-read')
         bookCardSettings.appendChild(read)
 
         if(this.haveRead === 'on') {
