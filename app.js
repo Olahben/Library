@@ -27,6 +27,14 @@ class Book {
         const bookCardSettings = document.createElement('div')
         bookCard.appendChild(bookCardSettings)
         bookCardSettings.classList.add('book-settings')
+
+        const read = document.createElement('input')
+        read.type = 'checkbox'
+        bookCardSettings.appendChild(read)
+
+        if(this.haveRead === 'on') {
+            
+        }
         }
 }
 
