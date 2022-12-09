@@ -66,7 +66,7 @@ const formFields = [document.querySelector('#title'), document.querySelector('#a
 function submitClick(event) {
     event.preventDefault()
     callBookConstructor()
-    console.log(event)
+    //console.log(event)
 }
 
 bookForm.addEventListener('submit', submitClick)
