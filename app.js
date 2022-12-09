@@ -17,10 +17,12 @@ class Book {
         const bookCardTitle = document.createElement('div')
         bookCard.appendChild(bookCardTitle)
         bookCardTitle.classList.add('book-title-author')
+        bookCardTitle.textContent += `${this.title} by ${this.author}`
 
         const bookCardPages = document.createElement('div')
         bookCard.appendChild(bookCardPages)
         bookCardPages.classList.add('book-pages')
+        bookCardPages.textContent =+ `${this.pages} pages`
 
         const bookCardSettings = document.createElement('div')
         bookCard.appendChild(bookCardSettings)
