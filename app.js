@@ -22,7 +22,7 @@ class Book {
         const bookCardPages = document.createElement('div')
         bookCard.appendChild(bookCardPages)
         bookCardPages.classList.add('book-pages')
-        bookCardPages.textContent =+ `${this.pages} pages`
+        bookCardPages.textContent =+ this.pages + ' ' + 'pages'
 
         const bookCardSettings = document.createElement('div')
         bookCard.appendChild(bookCardSettings)
