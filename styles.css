@@ -177,3 +177,15 @@ label {
     display: flex;
     justify-content: center;
 }
+
+.book-settings {
+    color: white;
+    font-family: 'Oswald';
+    font-size: 140%;
+    height: 20%;
+    
+}
+
+.delete {
+    display: block;
+}
