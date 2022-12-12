@@ -184,6 +184,10 @@ label {
     font-size: 140%;
     height: 20%;
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30%;
 }
 
 .delete {
