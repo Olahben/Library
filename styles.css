@@ -167,3 +167,13 @@ label {
     justify-content: center;
     margin-top: 20px;
 }
+
+.book-pages {
+    color: white;
+    font-family: 'Oswald';
+    font-size: 140%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+}
