@@ -156,3 +156,11 @@ label {
     justify-content: center;
     margin-bottom: 1%;
 }
+
+.book-title-author {
+    color: white;
+    font-family: 'Oswald';
+    font-size: 140%;
+    height: 20%;
+    
+}
