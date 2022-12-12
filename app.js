@@ -40,7 +40,9 @@ class Book {
             read.defaultChecked = false
         }
 
-
+        const deleteBookCard = document.createElement('button')
+        deleteBookCard.classList.add('delete')
+        bookCardSettings.appendChild(deleteBookCard)
         }
 }
 
