@@ -163,4 +163,7 @@ label {
     font-size: 140%;
     height: 20%;
     
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
