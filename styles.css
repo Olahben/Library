@@ -187,9 +187,17 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30%;
+    gap: 5%;
 }
 
 .delete {
     display: block;
+
+    background-color: #393E46;
+    color: white;
+    font-family: 'Oswald';
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 110%;
+    
 }
