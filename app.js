@@ -43,6 +43,7 @@ class Book {
         const deleteBookCard = document.createElement('button')
         deleteBookCard.classList.add('delete')
         bookCardSettings.appendChild(deleteBookCard)
+        deleteBookCard.textContent += 'delete'
         }
 }
 
