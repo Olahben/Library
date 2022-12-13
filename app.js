@@ -1,6 +1,7 @@
 
 const container = document.querySelector('#book-content')
 
+const library = []
 
 class Book {
     constructor(title, author, pages, haveRead) {
