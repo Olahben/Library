@@ -45,6 +45,7 @@ class Book {
         deleteBookCard.classList.add('delete')
         bookCardSettings.appendChild(deleteBookCard)
         deleteBookCard.textContent += 'delete'
+
         }
 }
 
@@ -78,7 +79,8 @@ bookForm.addEventListener('submit', submitClick)
 
 function callBookConstructor() {
     const newBook = new Book(formFields[0].value, formFields[1].value, formFields[2].value, formFields[3].value)
-     newBook.createBookCard()
+    newBook.createBookCard()
+    library.push(newBook)
 }
 
 
