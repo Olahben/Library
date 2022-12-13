@@ -46,6 +46,10 @@ class Book {
         bookCardSettings.appendChild(deleteBookCard)
         deleteBookCard.textContent += 'delete'
 
+        deleteBookCard.addEventListener('click', () => {
+            
+        });
+
         }
 }
 
@@ -82,6 +86,8 @@ function callBookConstructor() {
     newBook.createBookCard()
     library.push(newBook)
 }
+
+
 
 
 
