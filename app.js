@@ -1,6 +1,7 @@
 
 const container = document.querySelector('#book-content')
 
+let newBookIndex = 0;
 const library = []
 
 class Book {
