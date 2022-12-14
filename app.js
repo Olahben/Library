@@ -50,7 +50,7 @@ class Book {
         newBookIndex++;
 
         deleteBookCard.addEventListener('click', () => {
-
+            bookCard.style.display = 'none'
         });
 
         }
