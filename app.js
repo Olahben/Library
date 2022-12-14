@@ -46,6 +46,8 @@ class Book {
         deleteBookCard.classList.add('delete')
         bookCardSettings.appendChild(deleteBookCard)
         deleteBookCard.textContent += 'delete'
+        deleteBookCard.index = newBookIndex
+        newBookIndex++;
 
         deleteBookCard.addEventListener('click', () => {
 
