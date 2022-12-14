@@ -84,8 +84,10 @@ let newBookIndex = 0;
 
 function callBookConstructor() {
     const newBook = new Book(formFields[0].value, formFields[1].value, formFields[2].value, formFields[3].value)
-    newBook.createBookCard()
-    library.push(newBook)
+    newBook.createBookCard();
+    library.push(newBook);
+    newBook.index = newBookIndex;
+    newBookIndex++;
     
 }
 
