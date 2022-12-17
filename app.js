@@ -91,7 +91,10 @@ function callBookConstructor() {
     newBook.createBookCard();
     library.push(newBook);
 
+    const readStatus = document.querySelector('.book-card-read')
+    newBook.prototype.changeReadStatus =  formFields[3].addEventListener('click', () => {
     
+    });
     
 }
 
