@@ -45,7 +45,12 @@ class Book {
         bookCard.prototype = Object.create(Book)
         const readStatus = document.querySelector('.book-card-read')
         bookCard.prototype.changeReadStatus = readStatus.addEventListener('click', () => {
-            
+            if(readStatus.checked) {
+                bookCard.prototype.readStatusBoolean = true
+                console.log(bookCard.prototype.readStatusBoolean)
+            } else {
+                bookCard.prototype.readStatusBoolean = false
+            }
         });
         
 
