@@ -99,18 +99,10 @@ bookForm.addEventListener('submit', submitClick)
 
 function callBookConstructor() {
     const newBook = new Book(formFields[0].value, formFields[1].value, formFields[2].value, formFields[3].value)
-    newBook.prototype = Object.create(Book.prototype)
     newBook.createBookCard();
     library.push(newBook);
 
-    const readStatus = document.querySelector('.book-card-read')
-    /*newBook.prototype.changeReadStatus =  readStatus.addEventListener('click', () => {
-        if(readStatus.checked) {
-            newBook.readStatusBoolean = true
-        } else {
-            newBook.readStatusBoolean = false
-        }
-    });*/
+    
     
 }
 
