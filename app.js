@@ -43,6 +43,8 @@ class Book {
         }
 
         bookCard.prototype = Object.create(Book)
+        const readStatus = document.querySelector('.book-card-read')
+        
 
         const deleteBookCard = document.createElement('button')
         deleteBookCard.classList.add('delete')
