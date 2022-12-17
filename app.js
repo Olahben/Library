@@ -42,6 +42,8 @@ class Book {
             read.defaultChecked = false
         }
 
+        bookCard.prototype = Object.create(Book)
+
         const deleteBookCard = document.createElement('button')
         deleteBookCard.classList.add('delete')
         bookCardSettings.appendChild(deleteBookCard)
@@ -92,13 +94,15 @@ function callBookConstructor() {
     library.push(newBook);
 
     const readStatus = document.querySelector('.book-card-read')
-    newBook.prototype.changeReadStatus =  readStatus.addEventListener('click', () => {
-        console.log(readStatus)
-    });
+    /*newBook.prototype.changeReadStatus =  readStatus.addEventListener('click', () => {
+        if(readStatus.checked) {
+            newBook.readStatusBoolean = true
+        } else {
+            newBook.readStatusBoolean = false
+        }
+    });*/
     
 }
-
-
 
 
 
