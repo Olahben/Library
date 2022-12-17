@@ -92,8 +92,8 @@ function callBookConstructor() {
     library.push(newBook);
 
     const readStatus = document.querySelector('.book-card-read')
-    newBook.prototype.changeReadStatus =  formFields[3].addEventListener('click', () => {
-    
+    newBook.prototype.changeReadStatus =  readStatus.addEventListener('click', () => {
+        console.log(readStatus)
     });
     
 }
