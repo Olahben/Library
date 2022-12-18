@@ -54,9 +54,17 @@ class Book {
         deleteBookCard.addEventListener('click', () => {
             bookCard.style.display = 'none'
         });
-
-
+        Book.prototype.readStatus.call(this)
         }
+}
+
+Book.prototype.readStatus = () => {
+    if(formFields[3].checked) {
+        this.haveRead = true;
+    } else {
+        this.haveRead = false;
+
+    }
 }
 
 
@@ -81,12 +89,10 @@ const formFields = [document.querySelector('#title'), document.querySelector('#a
 function submitBookForm(event) {
     event.preventDefault()
     callBookConstructor()
-    //console.log(event)
 }
 
-bookForm.addEventListener('submit', submitClick)
+bookForm.addEventListener('submit', submitBookForm)
 
-//let newBookIndex = 0;
 
 function callBookConstructor() {
     const newBook = new Book(formFields[0].value, formFields[1].value, formFields[2].value, formFields[3].value)
