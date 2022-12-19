@@ -4,6 +4,8 @@ const container = document.querySelector('#book-content')
 let newBookIndex = 0;
 const library = []
 
+//const readCheckbox = document.querySelector('.book-card-read')
+
 class Book {
     constructor(title, author, pages, haveRead) {
         this.title = title, 
@@ -54,19 +56,25 @@ class Book {
         deleteBookCard.addEventListener('click', () => {
             bookCard.style.display = 'none'
         });
-        Book.prototype.readStatus.call(bookCard, bookCard)
+        Book.prototype.setReadStatus.call(bookCard, bookCard)
 
         const readCheckbox = document.querySelector('.book-card-read')
-        readCheckbox.addEventListener('click', () => {
-            //Book.prototype.readStatus.call(bookCard, bookCard);
+        /*readCheckbox.addEventListener('click', () => {
+            Book.prototype.updateReadStatus.call(bookCard, bookCard, readCheckbox);
+        });*/
+        Book.prototype.updateReadStatus = readCheckbox.addEventListener('click', () => {
+            if(readCheckbox.checked) {
+                bookCard.haveRead = true
+            } else {
+                bookCard.haveRead = false
+            }
+            console.log(bookCard.haveRead)
         });
         }
 }
 
 
-
-
-Book.prototype.readStatus = (bookCard) => {
+Book.prototype.setReadStatus = (bookCard) => {
     if(formFields[3].checked) {
         bookCard.haveRead = true;
     } else {
@@ -75,6 +83,17 @@ Book.prototype.readStatus = (bookCard) => {
     }
     console.log(bookCard.haveRead);
 }
+
+
+
+/*Book.prototype.updateReadStatus = (bookCard, checkbox) => {
+    if(checkbox.checked) {
+        bookCard.haveRead = true;
+    } else {
+        bookCard.haveRead = true;
+    }
+    console.log(bookCard.haveRead);
+}*/
 
 
 const modal = document.getElementById('modal')
