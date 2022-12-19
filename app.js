@@ -54,17 +54,26 @@ class Book {
         deleteBookCard.addEventListener('click', () => {
             bookCard.style.display = 'none'
         });
-        Book.prototype.readStatus.call(this)
+        Book.prototype.readStatus.call(bookCard, bookCard)
+
+        const readCheckbox = document.querySelector('.book-card-read')
+        readCheckbox.addEventListener('click', () => {
+            //Book.prototype.readStatus.call(bookCard, bookCard);
+        });
         }
 }
 
-Book.prototype.readStatus = () => {
+
+
+
+Book.prototype.readStatus = (bookCard) => {
     if(formFields[3].checked) {
-        this.haveRead = true;
+        bookCard.haveRead = true;
     } else {
-        this.haveRead = false;
+        bookCard.haveRead = false;
 
     }
+    console.log(bookCard.haveRead);
 }
 
 
