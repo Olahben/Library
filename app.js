@@ -63,7 +63,7 @@ class Book {
                 bookCard.haveRead = false;
         
             }
-            console.log(bookCard.haveRead);
+
         }
         const allReadCheckboxes = document.querySelectorAll('.book-card-read')
         const allReadCheckboxesArray = Array.from(allReadCheckboxes)
@@ -75,7 +75,6 @@ class Book {
                 checkbox.parentElement.parentElement.haveRead = false
                 
             }
-            console.log(checkbox.parentElement.parentElement.haveRead)
         }));
         }
 }
