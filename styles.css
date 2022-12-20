@@ -52,10 +52,10 @@
 
 #submit {
     background-color: #00ADB5;
-    font-size: 18px;
+    font-size: 100%;
     border-radius: 6px;
     font-weight: 700;
-    width: 30%;
+    width: 70px;
     height: 25px;
     border: 1px solid honeydew;
     color: white;
