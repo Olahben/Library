@@ -77,7 +77,15 @@ class Book {
         const allReadCheckboxes = document.querySelectorAll('.book-card-read')
         const allReadCheckboxesArray = Array.from(allReadCheckboxes)
 
-        
+        Book.prototype.setReadStatus = allReadCheckboxesArray.forEach((checkbox) => checkbox.addEventListener('click', () => { //Update read status
+            if(checkbox.checked) {
+                checkbox.parentElement.parentElement.haveRead = true
+            } else {
+                checkbox.parentElement.parentElement.haveRead = false
+                
+            }
+            console.log(checkbox.parentElement.parentElement.haveRead)
+        }));
         }
 }
 
