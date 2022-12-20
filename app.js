@@ -51,8 +51,8 @@ class Book {
         bookCardSettings.appendChild(deleteBookCard)
         deleteBookCard.textContent += 'delete'
         deleteBookCard.index = newBookIndex
-        newBookIndex++;
         bookCard.index = newBookIndex;
+        newBookIndex++;
 
         deleteBookCard.addEventListener('click', () => {
             bookCard.style.display = 'none'
@@ -63,14 +63,21 @@ class Book {
         /*readCheckbox.addEventListener('click', () => {
             Book.prototype.updateReadStatus.call(bookCard, bookCard, readCheckbox);
         });*/
-        Book.prototype.updateReadStatus = readCheckbox.addEventListener('click', () => {
+        /*Book.prototype.updateReadStatus = readCheckbox.addEventListener('click', () => {
+            console.log('anuhfe')
             if(readCheckbox.checked) {
+                console.log(readCheckbox.parentElement.parentElement.index)
                 bookCard.haveRead = true
             } else {
+                console.log(readCheckbox.parentElement.parentElement.index)
                 bookCard.haveRead = false
             }
             console.log(bookCard.haveRead)
-        });
+        });*/
+        const allReadCheckboxes = document.querySelectorAll('.book-card-read')
+        const allReadCheckboxesArray = Array.from(allReadCheckboxes)
+
+        
         }
 }
 
