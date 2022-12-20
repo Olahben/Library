@@ -4,8 +4,6 @@ const container = document.querySelector('#book-content')
 let newBookIndex = 0;
 const library = []
 
-//const readCheckbox = document.querySelector('.book-card-read')
-
 class Book {
     constructor(title, author, pages, haveRead) {
         this.title = title, 
@@ -58,7 +56,7 @@ class Book {
             bookCard.style.display = 'none'
         });
 
-        Book.prototype.setReadStatus = (bookCard) => {
+        Book.prototype.setReadStatus = (bookCard) => { // Set each books original read status
             if(formFields[3].checked) {
                 bookCard.haveRead = true;
             } else {
@@ -67,23 +65,6 @@ class Book {
             }
             console.log(bookCard.haveRead);
         }
-        console.log(formFields[3].checked)
-        //Book.prototype.setReadStatus.call(bookCard, bookCard)
-        const readCheckbox = document.querySelector('.book-card-read')
-        /*readCheckbox.addEventListener('click', () => {
-            Book.prototype.updateReadStatus.call(bookCard, bookCard, readCheckbox);
-        });*/
-        /*Book.prototype.updateReadStatus = readCheckbox.addEventListener('click', () => {
-            console.log('anuhfe')
-            if(readCheckbox.checked) {
-                console.log(readCheckbox.parentElement.parentElement.index)
-                bookCard.haveRead = true
-            } else {
-                console.log(readCheckbox.parentElement.parentElement.index)
-                bookCard.haveRead = false
-            }
-            console.log(bookCard.haveRead)
-        });*/
         const allReadCheckboxes = document.querySelectorAll('.book-card-read')
         const allReadCheckboxesArray = Array.from(allReadCheckboxes)
 
@@ -98,19 +79,6 @@ class Book {
         }));
         }
 }
-
-
-
-
-
-/*Book.prototype.updateReadStatus = (bookCard, checkbox) => {
-    if(checkbox.checked) {
-        bookCard.haveRead = true;
-    } else {
-        bookCard.haveRead = true;
-    }
-    console.log(bookCard.haveRead);
-}*/
 
 
 const modal = document.getElementById('modal')
