@@ -57,8 +57,18 @@ class Book {
         deleteBookCard.addEventListener('click', () => {
             bookCard.style.display = 'none'
         });
-        Book.prototype.setReadStatus.call(bookCard, bookCard)
 
+        Book.prototype.setReadStatus = (bookCard) => {
+            if(formFields[3].checked) {
+                bookCard.haveRead = true;
+            } else {
+                bookCard.haveRead = false;
+        
+            }
+            console.log(bookCard.haveRead);
+        }
+        console.log(formFields[3].checked)
+        //Book.prototype.setReadStatus.call(bookCard, bookCard)
         const readCheckbox = document.querySelector('.book-card-read')
         /*readCheckbox.addEventListener('click', () => {
             Book.prototype.updateReadStatus.call(bookCard, bookCard, readCheckbox);
@@ -90,15 +100,6 @@ class Book {
 }
 
 
-Book.prototype.setReadStatus = (bookCard) => {
-    if(formFields[3].checked) {
-        bookCard.haveRead = true;
-    } else {
-        bookCard.haveRead = false;
-
-    }
-    console.log(bookCard.haveRead);
-}
 
 
 
